@@ -8,5 +8,44 @@ package za.ac.cput.entities;
 */
 
 public class Doctor {
+    private String docID;
+    private String docFirstName;
+    private String docLastName;
+    private String docCellNum;
 
+    public Doctor(String docID, String docFirstName, String docLastName, String docCellNum) {
+        this.docID = docID;
+        this.docFirstName = docFirstName;
+        this.docLastName = docLastName;
+        this.docCellNum = docCellNum;
+    }
+
+    //GETTERS
+    public String getDocID() { return docID; }
+
+    public String getDocFirstName() { return docFirstName; }
+
+    public String getDocLastName() { return docLastName; }
+
+    public String getDocCellNum() { return docCellNum; }
+
+    //SETTERS
+    public void setDocID(String docID) { this.docID = docID; }
+
+    public void setDocFirstName(String docFirstName) { this.docFirstName = docFirstName; }
+
+    public void setDocLastName(String docLastName) { this.docLastName = docLastName; }
+
+    public void setDocCellNum(String docCellNum) { this.docCellNum = docCellNum; }
+
+    //toString
+    @Override
+    public String toString() {
+        return "Doctor{" +
+                "docID='" + docID + '\'' +
+                ", docFirstName='" + docFirstName + '\'' +
+                ", docLastName='" + docLastName + '\'' +
+                ", docCellNum='" + docCellNum + '\'' +
+                '}';
+    }
 }
