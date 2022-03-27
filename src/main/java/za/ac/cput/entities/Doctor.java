@@ -2,7 +2,7 @@ package za.ac.cput.entities;
 
 /*
     Doctor.java
-    Entity for the Doctors
+    Entity: Doctor
     Author: Sinenhlanhla Zondi (220008922)
     Date: 25 March 2022
 */
@@ -43,8 +43,12 @@ public class Doctor {
                 '}';
     }
 
+<<<<<<< HEAD
     public class DoctorBuilder
     {
+=======
+    public class DoctorBuilder {
+>>>>>>> 397aa88665f1a80f651090cda7c05dc604b29a6e
         private String docID;
         private String docFirstName;
         private String docLastName;
@@ -81,6 +85,9 @@ public class Doctor {
             Doctor doc = new Doctor(this);
             return doc;
         }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 397aa88665f1a80f651090cda7c05dc604b29a6e
     }
 }

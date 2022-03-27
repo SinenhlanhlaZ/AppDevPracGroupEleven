@@ -2,7 +2,7 @@ package za.ac.cput.entities;
 
 /*
     Doctor.java
-    Entity for the Doctors
+    Entity: Secretary
     Author: Sinenhlanhla Zondi (220008922)
     Date: 25 March 2022
 */
@@ -40,8 +40,12 @@ public class Secretary {
                 '}';
     }
 
+<<<<<<< HEAD
     public class SecretaryBuilder
     {
+=======
+    public class SecretaryBuilder {
+>>>>>>> 397aa88665f1a80f651090cda7c05dc604b29a6e
         private String secID;
         private String secFirstName;
         private String secLastName;
@@ -72,4 +76,8 @@ public class Secretary {
             return sec;
         }
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 397aa88665f1a80f651090cda7c05dc604b29a6e
 }
