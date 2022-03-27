@@ -1,4 +1,5 @@
 package za.ac.cput.entities;
+
 /*
     HospitalRoom.java
     Entity for the Hospital Rooms
@@ -6,10 +7,11 @@ package za.ac.cput.entities;
     Date: 27 March 2022
 */
 public class HospitalRoom {
-    private int roomFloor;
     private String roomID;
+    private int roomFloor;
 
-    private HospitalRoom(Builder builder){
+
+    private HospitalRoom(Builder builder) {
         this.roomFloor = builder.roomFloor;
         this.roomID = builder.roomID;
     }
@@ -59,7 +61,7 @@ public class HospitalRoom {
             return this;
         }
 
-        public HospitalRoom build(){
+        public HospitalRoom build() {
             return new HospitalRoom(this);
         }
     }

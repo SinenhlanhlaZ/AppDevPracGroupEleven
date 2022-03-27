@@ -1,4 +1,5 @@
 package za.ac.cput.entities;
+
 /*
     Nurse.java
     Entity for the Nurses
