@@ -1,5 +1,10 @@
 package za.ac.cput.factory;
-
+/*
+    NurseFactory.java
+    Factory Entity for the Nurses
+    Author: Fayaad Abrahams (218221630)
+    Date: 27 March 2022
+*/
 import za.ac.cput.entities.Nurse;
 
 public class NurseFactory {
