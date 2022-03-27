@@ -7,9 +7,9 @@ package za.ac.cput.factory;
     Date: 25 March 2022
 */
 
-public class Doctor implements DoctorNames{
+public class Secretary implements SecretaryID {
     @Override
-    public void doctorFirstNames() {
-        System.out.println("Surname of the doctor is Zondi.");
+    public void secretaryID() {
+        System.out.println("The name of the secretary is Chloe.");
     }
 }

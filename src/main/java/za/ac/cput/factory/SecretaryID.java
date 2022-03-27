@@ -7,6 +7,6 @@ package za.ac.cput.factory;
     Date: 25 March 2022
 */
 
-public interface DoctorNames {
-    void doctorFirstNames();
+public interface SecretaryID {
+    void secretaryID();
 }

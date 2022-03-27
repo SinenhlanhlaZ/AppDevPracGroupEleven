@@ -1,11 +1,15 @@
 package za.ac.cput.entities;
 
+/*
+    Doctor.java
+    Entity: Doctor
+    Author: Sinenhlanhla Zondi (220008922)
+    Date: 25 March 2022
+*/
+
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestFactory;
 import za.ac.cput.factory.DoctorFactory;
 import za.ac.cput.factory.DoctorNames;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class DoctorTest {
 
