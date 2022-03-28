@@ -7,6 +7,8 @@ package za.ac.cput.entities;
     Date: 25 March 2022
 */
 
+import java.util.Locale;
+
 public class Secretary {
     private String secID;
     private String secFirstName;
@@ -38,7 +40,12 @@ public class Secretary {
                 '}';
     }
 
+<<<<<<< HEAD
+    public class SecretaryBuilder
+    {
+=======
     public class SecretaryBuilder {
+>>>>>>> 397aa88665f1a80f651090cda7c05dc604b29a6e
         private String secID;
         private String secFirstName;
         private String secLastName;
@@ -69,5 +76,8 @@ public class Secretary {
             return sec;
         }
     }
+<<<<<<< HEAD
+=======
 
+>>>>>>> 397aa88665f1a80f651090cda7c05dc604b29a6e
 }
