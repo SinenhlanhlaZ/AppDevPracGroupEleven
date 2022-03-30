@@ -10,6 +10,7 @@ import za.ac.cput.entities.HospitalRoom;
 public class HospitalRoomFactory {
 
     public static HospitalRoom createHospitalRoom(String roomID, Integer roomFloor) {
+        // Create method to generate roomID in Helper package
         if (roomFloor == null) {
             return null;
         }
