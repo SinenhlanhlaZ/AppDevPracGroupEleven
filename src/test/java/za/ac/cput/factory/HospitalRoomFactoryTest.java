@@ -11,7 +11,7 @@ import za.ac.cput.entities.HospitalRoom;
 class HospitalRoomFactoryTest {
     @Test
     public void test() {
-        HospitalRoom hospRoom = HospitalRoomFactory.createHospitalRoom("4D", 2);
+        HospitalRoom hospRoom = HospitalRoomFactory.createHospitalRoom( 2);
         System.out.println(hospRoom);
 
     }

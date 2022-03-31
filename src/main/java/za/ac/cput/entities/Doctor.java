@@ -21,16 +21,38 @@ public class Doctor {
     }
 
     //GETTERS
-    public String getDocID() { return docID; }
-    public String getDocFirstName() { return docFirstName; }
-    public String getDocLastName() { return docLastName; }
-    public String getDocCellNum() { return docCellNum; }
+    public String getDocID() {
+        return docID;
+    }
+
+    public String getDocFirstName() {
+        return docFirstName;
+    }
+
+    public String getDocLastName() {
+        return docLastName;
+    }
+
+    public String getDocCellNum() {
+        return docCellNum;
+    }
 
     //SETTERS
-    public void setDocID(String docID) { this.docID = docID; }
-    public void setDocFirstName(String docFirstName) { this.docFirstName = docFirstName; }
-    public void setDocLastName(String docLastName) { this.docLastName = docLastName; }
-    public void setDocCellNum(String docCellNum) { this.docCellNum = docCellNum; }
+    public void setDocID(String docID) {
+        this.docID = docID;
+    }
+
+    public void setDocFirstName(String docFirstName) {
+        this.docFirstName = docFirstName;
+    }
+
+    public void setDocLastName(String docLastName) {
+        this.docLastName = docLastName;
+    }
+
+    public void setDocCellNum(String docCellNum) {
+        this.docCellNum = docCellNum;
+    }
 
     //toString
     @Override
@@ -43,12 +65,9 @@ public class Doctor {
                 '}';
     }
 
-<<<<<<< HEAD
-    public class DoctorBuilder
-    {
-=======
+
     public class DoctorBuilder {
->>>>>>> 397aa88665f1a80f651090cda7c05dc604b29a6e
+
         private String docID;
         private String docFirstName;
         private String docLastName;
@@ -85,9 +104,6 @@ public class Doctor {
             Doctor doc = new Doctor(this);
             return doc;
         }
-<<<<<<< HEAD
 
-=======
->>>>>>> 397aa88665f1a80f651090cda7c05dc604b29a6e
     }
 }
