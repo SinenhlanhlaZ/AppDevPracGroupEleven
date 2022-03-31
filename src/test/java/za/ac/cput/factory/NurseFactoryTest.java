@@ -11,7 +11,7 @@ import za.ac.cput.entities.Nurse;
 class NurseFactoryTest {
     @Test
     public void test(){
-        Nurse nurse = NurseFactory.createNurse("4361DFD", "Janice","Dean");
+        Nurse nurse = NurseFactory.createNurse( "Janice","Dean");
         System.out.println(nurse);
 
     }
