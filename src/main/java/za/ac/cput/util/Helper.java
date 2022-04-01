@@ -5,6 +5,7 @@ package za.ac.cput.util;
     Author: Fayaad Abrahams (218221630)
     Date: 31 March 2022
 */
+
 import java.util.Random;
 
 public class Helper {

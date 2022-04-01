@@ -5,8 +5,8 @@ import org.junit.jupiter.api.Test;
 import za.ac.cput.entities.HospitalRoom;
 import za.ac.cput.factory.HospitalRoomFactory;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
+
 /*
     HospitalRoomRepositoryTest.java
     Test Repository Entity for the Hospital Rooms
@@ -34,6 +34,10 @@ class HospitalRoomRepositoryTest {
 
     @Test
     void update() {
+        HospitalRoom updated = new HospitalRoom.Builder().copy(hospRoom).setRoomFloor(10)
+                .build();
+        assertNotNull(repository.update(updated));
+        System.out.println("Updated: " + updated);
     }
 
     @Test

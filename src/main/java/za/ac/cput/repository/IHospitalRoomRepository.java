@@ -11,6 +11,5 @@ import java.util.Set;
     Date: 31 March 2022
 */
 public interface IHospitalRoomRepository  extends IRepository<HospitalRoom, String>{
-
     public Set<HospitalRoom> getAll();
 }
