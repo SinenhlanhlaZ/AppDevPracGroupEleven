@@ -1,7 +1,7 @@
 package za.ac.cput.repository;
 
 public interface IRepository<T, G> {
-    void create();
+    T create(T);
     void read();
     void update();
     boolean delete();
