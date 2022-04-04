@@ -1,7 +1,9 @@
 package za.ac.cput.repository;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.MethodOrderer;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestMethodOrder;
 import za.ac.cput.entities.Nurse;
 import za.ac.cput.factory.NurseFactory;
 
@@ -14,26 +16,27 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
     Author: Fayaad Abrahams (218221630)
     Date: 1 April 2022
 */
+@TestMethodOrder(MethodOrderer.MethodName.class)
 class NurseRepositoryTest {
     private static NurseRepository repository = NurseRepository.getRepository();
     private static Nurse nurse = NurseFactory.createNurse("Janice", "Maven");
 
     @Test
-    void create() {
+    void a_create() {
         Nurse createdNurse = repository.create(nurse);
         assertEquals(nurse.getNurseID(), createdNurse.getNurseID());
         System.out.println("Created Nurse ID: " + createdNurse);
     }
 
     @Test
-    void read() {
+    void b_read() {
         Nurse read = repository.read(nurse.getNurseID());
         assertNotNull(read);
         System.out.println("Read: " + read);
     }
 
     @Test
-    void update() {
+    void c_update() {
         Nurse updated = new Nurse.Builder().copy(nurse).setNurseFirstName("Helena")
                 .setNurseLastName("Maima")
                 .build();
@@ -42,14 +45,14 @@ class NurseRepositoryTest {
     }
 
     @Test
-    void delete() {
+    void e_delete() {
         boolean success = repository.delete(nurse.getNurseID());
         Assertions.assertTrue(success);
         System.out.println("Deleted nurse ID: " + success);
     }
 
     @Test
-    void getAll() {
+    void d_getAll() {
         System.out.println("Show all Items: ");
         System.out.println(repository.getAll());
     }
