@@ -6,5 +6,11 @@ package za.ac.cput.repository;
     Date: 25 March 2022
 */
 
-public interface IDoctorRepository {
+import za.ac.cput.entities.Doctor;
+
+import java.util.ArrayList;
+
+public interface IDoctorRepository extends IRepository<Doctor, String>
+{
+    public ArrayList<Doctor> getDoctors();
 }

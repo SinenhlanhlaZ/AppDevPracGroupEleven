@@ -12,23 +12,23 @@ import java.util.ArrayList;
 
 public class SecretaryRepository implements ISecretaryRepository {
 
-    private static SecretaryRepository rep = null;
-    private ArrayList<Secretary> secData = null;
+    private static SecretaryRepository secRepository = null;
+    private ArrayList<Secretary> secretaryArrayList = null;
 
     private SecretaryRepository() {
-        secData = new ArrayList<Secretary>();
+        secretaryArrayList = new ArrayList<Secretary>();
     }
 
     public static SecretaryRepository getRepository() {
-        if(rep == null) {
-            rep = new SecretaryRepository();
+        if(secRepository == null) {
+            secRepository = new SecretaryRepository();
         }
-        return rep;
+        return secRepository;
     }
 
     @Override
     public Secretary create(Secretary sec) {
-        boolean success = secData.add(sec);
+        boolean success = secretaryArrayList.add(sec);
         if(!success)
         {
             return null;
@@ -37,7 +37,7 @@ public class SecretaryRepository implements ISecretaryRepository {
     }
 
     public Secretary read(String secID) {
-        for(Secretary s : secData)
+        for(Secretary s : secretaryArrayList)
         {
             if(s.getSecID().equals(secID))
             {
@@ -52,8 +52,8 @@ public class SecretaryRepository implements ISecretaryRepository {
         Secretary s = read(sec.getSecID());
         if( s != null)
         {
-            secData.remove(s);
-            secData.add(sec);
+            secretaryArrayList.remove(s);
+            secretaryArrayList.add(sec);
             return sec;
         }
         return null;
@@ -67,13 +67,13 @@ public class SecretaryRepository implements ISecretaryRepository {
         {
             return false;
         }
-        secData.remove(secretaryToBeDeleted);
+        secretaryArrayList.remove(secretaryToBeDeleted);
         return true;
     }
 
     @Override
     public ArrayList<Secretary> getSecretaries()
     {
-        return null;
+        return secretaryArrayList;
     }
 }

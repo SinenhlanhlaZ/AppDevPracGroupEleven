@@ -53,30 +53,31 @@ public class Secretary {
                 '}';
     }
 
-    public class SecretaryBuilder {
+    public static class SecretaryBuilder {
 
         private String secID;
         private String secFirstName;
         private String secLastName;
 
-        public SecretaryBuilder(String secID, String secFirstName, String secLastName) {
-            this.secID = secID;
-            this.secFirstName = secFirstName;
-            this.secLastName = secLastName;
-        }
-
-        public SecretaryBuilder secID(String secID) {
+        public SecretaryBuilder setID(String secID) {
             this.secID = secID;
             return this;
         }
 
-        public SecretaryBuilder secFirstName(String secFirstName) {
+        public SecretaryBuilder setFirstName(String secFirstName) {
             this.secFirstName = secFirstName;
             return this;
         }
 
-        public SecretaryBuilder secLastName(String secLastName) {
+        public SecretaryBuilder setLastName(String secLastName) {
             this.secLastName = secLastName;
+            return this;
+        }
+
+        public SecretaryBuilder copy(Secretary secretary) {
+            this.secID = secretary.secID;
+            this.secFirstName = secretary.secFirstName;
+            this.secLastName = secretary.secLastName;
             return this;
         }
 
