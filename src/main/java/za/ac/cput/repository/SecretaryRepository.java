@@ -36,7 +36,6 @@ public class SecretaryRepository implements ISecretaryRepository {
         return sec;
     }
 
-    @Override
     public Secretary read(String secID) {
         for(Secretary s : secData)
         {
@@ -48,18 +47,33 @@ public class SecretaryRepository implements ISecretaryRepository {
         return null;
     }
 
-    @Override
-    public void update() {
-
+    public Secretary update(Secretary sec)
+    {
+        Secretary s = read(sec.getSecID());
+        if( s != null)
+        {
+            secData.remove(s);
+            secData.add(sec);
+            return sec;
+        }
+        return null;
     }
 
     @Override
-    public boolean delete() {
-        return false;
+    public boolean delete(String secID)
+    {
+        Secretary secretaryToBeDeleted = read(secID);
+        if(secretaryToBeDeleted == null)
+        {
+            return false;
+        }
+        secData.remove(secretaryToBeDeleted);
+        return true;
     }
 
     @Override
-    public ArrayList<Secretary> getSecretaries() {
+    public ArrayList<Secretary> getSecretaries()
+    {
         return null;
     }
 }
