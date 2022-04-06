@@ -8,12 +8,12 @@ package za.ac.cput.factory;
 */
 
 import org.junit.jupiter.api.Test;
+import za.ac.cput.entities.Doctor;
 
 public class DoctorFactoryTest {
     @Test
     public void testDoctor() {
-        DoctorFactory docFactory = new DoctorFactory();
-        DoctorNames docNames = docFactory.getDoctorFirstName("Sine");
-        docNames.doctorFirstNames();
+        Doctor doc = DoctorFactory.createDoctor("Luke", "Plapp", "0123456789");
+        System.out.println(doc);
     }
 }

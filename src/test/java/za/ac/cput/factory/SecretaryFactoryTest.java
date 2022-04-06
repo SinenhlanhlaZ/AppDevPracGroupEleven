@@ -8,12 +8,12 @@ package za.ac.cput.factory;
 */
 
 import org.junit.jupiter.api.Test;
+import za.ac.cput.entities.Secretary;
 
 public class SecretaryFactoryTest {
     @Test
     public void testSecretary() {
-        SecretaryFactory secFactory = new SecretaryFactory();
-        SecretaryID sec = secFactory.getSecretaryName("2433");
-        sec.secretaryID();
+        Secretary sec = SecretaryFactory.createSecretary("Chloe", "Fraizer");
+        System.out.println(sec);
     }
 }
