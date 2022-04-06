@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.*;
     HospitalRoomRepositoryTest.java
     Test Repository Entity for the Hospital Rooms
     Author: Fayaad Abrahams (218221630)
-    Date: 1 April 2022
+    Date: 6 April 2022
 */
 @TestMethodOrder(MethodOrderer.MethodName.class)
 class HospitalRoomRepositoryTest {
