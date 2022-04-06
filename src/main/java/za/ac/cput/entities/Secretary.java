@@ -1,13 +1,10 @@
 package za.ac.cput.entities;
 
 /*
-    Doctor.java
     Entity: Secretary
     Author: Sinenhlanhla Zondi (220008922)
     Date: 25 March 2022
 */
-
-import java.util.Locale;
 
 public class Secretary {
     private String secID;
@@ -21,14 +18,30 @@ public class Secretary {
     }
 
     //GETTERS
-    public String getSecID() { return secID; }
-    public String getSecFirstName() { return secFirstName; }
-    public String getSecLastName() { return secLastName; }
+    public String getSecID() {
+        return secID;
+    }
+
+    public String getSecFirstName() {
+        return secFirstName;
+    }
+
+    public String getSecLastName() {
+        return secLastName;
+    }
 
     //SETTERS
-    public void setSecID(String secID) { this.secID = secID; }
-    public void setSecFirstName(String secFirstName) { this.secFirstName = secFirstName; }
-    public void setSecLastName(String secLastName) { this.secLastName = secLastName; }
+    public void setSecID(String secID) {
+        this.secID = secID;
+    }
+
+    public void setSecFirstName(String secFirstName) {
+        this.secFirstName = secFirstName;
+    }
+
+    public void setSecLastName(String secLastName) {
+        this.secLastName = secLastName;
+    }
 
     //toString
     @Override
@@ -40,34 +53,31 @@ public class Secretary {
                 '}';
     }
 
-<<<<<<< HEAD
-    public class SecretaryBuilder
-    {
-=======
-    public class SecretaryBuilder {
->>>>>>> 397aa88665f1a80f651090cda7c05dc604b29a6e
+    public static class SecretaryBuilder {
+
         private String secID;
         private String secFirstName;
         private String secLastName;
 
-        public SecretaryBuilder(String secID, String secFirstName, String secLastName) {
-            this.secID = secID;
-            this.secFirstName = secFirstName;
-            this.secLastName = secLastName;
-        }
-
-        public SecretaryBuilder secID(String secID) {
+        public SecretaryBuilder setID(String secID) {
             this.secID = secID;
             return this;
         }
 
-        public SecretaryBuilder secFirstName(String secFirstName) {
+        public SecretaryBuilder setFirstName(String secFirstName) {
             this.secFirstName = secFirstName;
             return this;
         }
 
-        public SecretaryBuilder secLastName(String secLastName) {
+        public SecretaryBuilder setLastName(String secLastName) {
             this.secLastName = secLastName;
+            return this;
+        }
+
+        public SecretaryBuilder copy(Secretary secretary) {
+            this.secID = secretary.secID;
+            this.secFirstName = secretary.secFirstName;
+            this.secLastName = secretary.secLastName;
             return this;
         }
 
@@ -76,8 +86,6 @@ public class Secretary {
             return sec;
         }
     }
-<<<<<<< HEAD
-=======
 
->>>>>>> 397aa88665f1a80f651090cda7c05dc604b29a6e
 }
+

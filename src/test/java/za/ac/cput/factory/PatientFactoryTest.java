@@ -1,4 +1,5 @@
 package za.ac.cput.factory;
+
 /*
     PatientFactoryTest.java
     Entity: PatientFactoryTest
@@ -15,8 +16,9 @@ class PatientFactoryTest {
 
     @Test
     public void test() {
-        Patient patient = PatientFactory.createPatient("271D35","Ishmail","Mgwena"
-                                    ,"D122 Cape Town","0703566666" );
+        Patient patient = PatientFactory.createPatient("266d12","Ishmail","Mgwena"
+        ,"D12 Cape Town","091788574");
         assertNotNull(patient);
     }
+
 }

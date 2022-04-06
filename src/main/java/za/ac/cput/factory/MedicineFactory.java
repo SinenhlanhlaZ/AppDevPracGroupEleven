@@ -1,10 +1,12 @@
 package za.ac.cput.factory;
+
 /*
     MedicineFactory.java
     Entity: MedicineFactory
     Author: Ishmail T Mgwena (215088417)
     Date: 28 March 2022
 */
+
 import za.ac.cput.entities.Medicine;
 
 public class MedicineFactory {
