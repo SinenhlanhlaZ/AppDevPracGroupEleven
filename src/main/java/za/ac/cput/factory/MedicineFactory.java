@@ -8,13 +8,17 @@ package za.ac.cput.factory;
 */
 
 import za.ac.cput.entities.Medicine;
+import za.ac.cput.util.Helper;
 
 public class MedicineFactory {
 
     public static Medicine createMedicine(String medicineID, String medicineAmount, String medicineType) {
-        return new Medicine.Builder().setMedicineID(medicineID)
+
+        String medID = Helper.generateID();
+         Medicine medicine = new Medicine.Builder().setMedicineID(medicineID)
                 .setMedicineAmount(medicineAmount)
                 .setMedicineType(medicineType)
                 .build();
+        return medicine;
     }
 }
