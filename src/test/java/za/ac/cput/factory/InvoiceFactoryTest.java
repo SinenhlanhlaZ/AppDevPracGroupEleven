@@ -3,7 +3,7 @@ package za.ac.cput.factory;
 import za.ac.cput.entities.Invoice;
 import org.junit.jupiter.api.Test;
 /* InvoiceFacoryTest.java
-Interface for the Invoice
+Invoice Factory Test 
 Author: Shina Kara 219333181
 Date: March 2022
 */
