@@ -4,7 +4,11 @@ import org.junit.jupiter.api.Test;
 import za.ac.cput.entities.MedicalAid;
 
 import static org.junit.jupiter.api.Assertions.*;
-
+/* MedicalAidFactoryTest.java
+Factory Test for  Medical Aid
+Author: Shina Kara 219333181
+Date: March 2022
+*/
 class MedicalAidFactoryTest {
     @Test
     public void test(){
