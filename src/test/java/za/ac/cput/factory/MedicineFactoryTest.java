@@ -18,5 +18,6 @@ class MedicineFactoryTest {
     public void test() {
         Medicine medicine = MedicineFactory.createMedicine("2189","R30","Painkillers");
         assertNotNull(medicine);
+        System.out.println(medicine);
     }
 }
