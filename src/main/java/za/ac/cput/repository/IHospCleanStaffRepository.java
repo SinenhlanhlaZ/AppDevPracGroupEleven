@@ -12,4 +12,5 @@ import java.util.Set;
 
 public interface IHospCleanStaffRepository extends IRepository<HospCleanStaff, String> {
     public Set<HospCleanStaff> getAll();
+
 }

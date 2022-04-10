@@ -1,4 +1,6 @@
-# AppDevPracGroupEleven
+# Applications Development Practice 3
+## Hospital Management System
+### AppDevPracGroupEleven 
 
 Entities are as follows: <br>
 -Doctor <br>
@@ -21,3 +23,5 @@ Group members entity assignment is as follows: <br>
 -Ishmail: Patient & Medicine <br>
 -Sinazo: Cleaning staff & Appointment <br>
 -Shina: Medical aid & Invoice
+
+![](uml/umlDiagram.png)
