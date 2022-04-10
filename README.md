@@ -1,6 +1,6 @@
 # Applications Development Practice 3
 ## Hospital Management System
-### AppDevPracGroupEleven 
+### AppDevPrac Group Eleven 
 
 Entities are as follows: <br>
 -Doctor <br>
@@ -16,6 +16,8 @@ Entities are as follows: <br>
 -Appointment <br>
 -Invoice <br>
 
+![](uml/umlDiagram.png)
+
 Group members entity assignment is as follows: <br>
 -Sine: Doctor & Secretary <br>
 -Nonzwakazi: Driver & Supplier <br>
@@ -24,4 +26,3 @@ Group members entity assignment is as follows: <br>
 -Sinazo: Cleaning staff & Appointment <br>
 -Shina: Medical aid & Invoice
 
-![](uml/umlDiagram.png)
