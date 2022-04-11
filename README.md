@@ -19,10 +19,10 @@ Entities are as follows: <br>
 ![](uml/umlDiagram.png)
 
 Group members entity assignment is as follows: <br>
--Sine: Doctor & Secretary <br>
--Nonzwakazi: Driver & Supplier <br>
--Fayaad: Nurse & Hospital room <br>
--Ishmail: Patient & Medicine <br>
--Sinazo: Cleaning staff & Appointment <br>
--Shina: Medical aid & Invoice
+-Sinenhlanhla Zondi (220008922): Doctor & Secretary <br>
+-Nonzwakazi Mgxaji (213181584): Driver & Supplier <br>
+-Fayaad Abrahams (218221630) : Nurse & Hospital room <br>
+-Ishmail Tafadzwa Mgwena (215088417): Patient & Medicine <br>
+-Sinazo Mehlomakhulu (216076498): Cleaning staff & Appointment <br>
+-Shina Kara (219333181): Medical aid & Invoice
 
